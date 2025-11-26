@@ -7,5 +7,3 @@ In this course project, we implemented:
 3. Heston calibration: We calibrate the Heston model to fit that day’s option prices, compare model-generated data with market data in terms of both price and implied volatility errors, and produce volatility-surface plots.
 
 4. Multi-month study and backtest: We perform daily calibrations over four consecutive months and further assess the quality of the Heston calibration from a delta-hedging backtesting perspective.
-
-Here, the source data consists of a set of ZIP files named Optsum_YYYY-MM-DD. Each archive contains a CSV file with the same name. For this project, we use files from Optsum_2017-01-03.zip through Optsum_2017-05-31.zip.
