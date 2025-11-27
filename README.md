@@ -13,6 +13,7 @@ merge_optsum_zips.py is used to combine all files named Optsum_YYYY-MM-DD; each 
 ## Arbitrage check:
 
 For the source data, we checked the following discrete no-arbitrage conditions: bid ≤ ask; vertical spreads; butterfly convexity; calendar monotonicity; and put–call parity.
+
 We identified regions that potentially violate these conditions (and thus admit arbitrage) and computed their proportions. See diagnostics_heston_qc.py for details.
 
 2. For each day, we test whether market prices of European calls and puts satisfy static no-arbitrage conditions.
