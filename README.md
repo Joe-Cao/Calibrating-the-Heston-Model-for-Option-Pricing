@@ -1,4 +1,4 @@
-In this course project, we implemented:
+# In this course project, we implemented:
 
 1. No-arbitrage checks: For each day, we test whether market prices of European calls and puts satisfy static no-arbitrage conditions.
 
