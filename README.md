@@ -4,7 +4,7 @@ In this course project, we implemented:
 
 ## Data preprocessing:
 
-Here, the source data consists of a set of ZIP files named Optsum_YYYY-MM-DD. Each archive contains a CSV file with the same name. For this project, we use files from Optsum_2017-01-03.zip through Optsum_2017-05-31.zip. 
+Here, the source data consists of a set of ZIP files named Optsum_YYYY-MM-DD. Each archive contains a CSV file with the same name. For this project, we use files from Optsum_2017-01-03.zip through Optsum_2017-05-31.zip. To simplify the calibration objective, we use pick_points_bs.py, which selects only option quotes at or near the specified maturities and strikes. merge_optsum_zips.py is used to combine all files named Optsum_YYYY-MM-DD; each archive contains option quotes for a single quoted date.
 
 2. For each day, we test whether market prices of European calls and puts satisfy static no-arbitrage conditions.
 
