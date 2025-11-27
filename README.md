@@ -16,7 +16,7 @@ For the source data, we checked the following discrete no-arbitrage conditions: 
 
 We identified regions that potentially violate these conditions (and thus admit arbitrage) and computed their proportions. See diagnostics_heston_qc.py for details.
 
-# Heston Calibration
+## Heston Calibration
 
 We calibrate the Heston model to fit that day’s option prices, compare model-generated data with market data in terms of both price and implied volatility errors, and produce volatility-surface plots.
 
@@ -24,7 +24,7 @@ calibrate_heston_bs.py demonstrates how to calibrate the Heston model to multi-d
 
 draw_IV_surface.py shows how to plot the implied-volatility surface from a given day’s market data and from the calibrated parameters, and how to compare the two surfaces by computing their errors.
 
-# Multi-month study and backtest
+## Multi-month study and backtest
 
 From the daily Heston calibrations over four consecutive months, we further evaluate calibration quality through a delta-hedging backtest.
 
