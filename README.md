@@ -30,11 +30,4 @@ From the daily Heston calibrations over four consecutive months, we further eval
 
 delta_hedging_backtest_tailored.py demonstrates how to build a delta-hedging backtest based on the calibrated Heston model, and how to decompose each hedging strategy’s PnL into components—TH (time decay), UM–delta-hedged (underlying move after delta hedging), SM (smile/vol effect), and ME (model error)—and then compute the daily sums for each component.
 
-
-2. For each day, we test whether market prices of European calls and puts satisfy static no-arbitrage conditions.
-
-3. Point picker: Given an expiry date and strike price, we select the nearest available market quote for subsequent calibration.
-
-4. Heston calibration: We calibrate the Heston model to fit that day’s option prices, compare model-generated data with market data in terms of both price and implied volatility errors, and produce volatility-surface plots.
-
-5. Multi-month study and backtest: We perform daily calibrations over four consecutive months and further assess the quality of the Heston calibration from a delta-hedging backtesting perspective.
+daily_metrics_reports.py compiles a suite of statistics for the delta-hedging backtest—such as the t-statistic, hit rate, AC(1), maximum drawdown, and more. It also performs statistical analysis on each component (TH, UM–delta-hedged, SM, ME) to identify which one contributes most to the daily PnL.
