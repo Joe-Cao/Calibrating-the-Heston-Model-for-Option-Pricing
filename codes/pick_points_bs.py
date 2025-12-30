@@ -93,7 +93,7 @@ def pick_points_bs(
 
             # Soft filters: valid k/mid & spread not too large
             sub = sub[np.isfinite(sub['k']) & np.isfinite(sub['mid']) & (sub['mid']>0)]
-            sub = sub[(sub['spread_pct'].isna()) | (sub['spread_pct'] <= max_spread_pct)]
+            #sub = sub[(sub['spread_pct'].isna()) | (sub['spread_pct'] <= max_spread_pct)]
             if sub.empty:
                 continue
 
@@ -168,3 +168,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
